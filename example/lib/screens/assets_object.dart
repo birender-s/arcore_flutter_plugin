@@ -116,7 +116,9 @@ class _ListObjectSelectionState extends State<ListObjectSelection> {
   List<String> objectsFileName = [
     'toucan.sfb',
     'andy.sfb',
-    'artic_fox.sfb',
+    // 'artic_fox.sfb',
+    'iPhone_12.sfb',
+    // 'iphone-se.sfb',
   ];
 
   String? selected;

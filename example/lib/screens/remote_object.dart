@@ -16,7 +16,7 @@ class _RemoteObjectState extends State<RemoteObject> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Custom Object on plane detected'),
+          title: const Text('Custom Object: Birender'),
         ),
         body: ArCoreView(
           onArCoreViewCreated: _onArCoreViewCreated,
@@ -34,9 +34,10 @@ class _RemoteObjectState extends State<RemoteObject> {
 
   void _addToucano(ArCoreHitTestResult plane) {
     final toucanNode = ArCoreReferenceNode(
-        name: "Toucano",
+        name: "BoxSpaces",
         objectUrl:
-            "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Duck/glTF/Duck.gltf",
+        "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Duck/glTF/Duck.gltf",
+            // "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Lantern/glTF/Lantern.gltf",
         position: plane.pose.translation,
         rotation: plane.pose.rotation);
 
